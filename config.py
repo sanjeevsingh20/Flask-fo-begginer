@@ -1,0 +1,6 @@
+account_sid ='AC863c07d40f8a113ed3da5f64b0e8a7d4'
+auth_token ='4e986f101e3974ceb583b77251458db2'
+email_user='manojkumarsinghy20@gmail.com'
+email_pass='oyqtawvshjcradok'
+twilio_number ='+14058702235'
+target_number ='+918750706049'

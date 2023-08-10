@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74c8a167f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+    <title>URS-Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="page-body">
+            <div class="pd-20">
+                <div class="navigate">
+                    <div class="flex centr">
+                        <div class="logo">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="slogan">
+                            <span class="says">Preparing You For Tommorrow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-form">
+                    <div class="center">
+                        <form action="http://localhost:5000/log" method="post">
+                            <div class="sign-dis">
+                                <div class="pd-20 pd-10">
+                                    <div class="heading flex">
+                                        <div class="profile">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                        <div class="log" >
+                                            <h2 style="text-align:center:">LOGIN</h2>
+                                            <p style="color:red; text-align:center:"> {{msg}} </p>
+                                        </div>
+                                    </div>
+                                    <div class="inputs">
+                                        <div class="pd-20 flex mid">
+                                            <div class="mr-10">
+                                                <input type="text" name="user" autocomplete="on" autofocus placeholder="Phone number" class="cl-gr">
+                                            </div>
+                                            <div class="mr-10">
+                                                <input type="password" name="passw"autocomplete="on" placeholder="Password" class="cl-gr"><br>
+                                                <span class="end" ><a href="/reset_password" class="txt-none">Forgotten Password?</a></span>
+                                            </div>
+                                            <div class="mr-10">
+                                                <input type="submit" value="LOGIN" class="cl-gr blu">
+                                            </div>
+                                            <div class="new">
+                                                <span>Don't have account? <a href="/login" class="txt-none">Register Now</a></span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

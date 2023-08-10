@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(132deg, rgb(129, 34, 254) 0.00%, rgb(255, 186, 214) 100.00%);
+    background-repeat: no-repeat;
+}
+.pd-20{
+    padding: 20px;
+}
+.registration{
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.jc-c{
+    justify-content: center;
+    align-items: center;
+}
+.bg-blu{
+    background: rgb(0, 119, 255);
+    width: 35%;
+    height: 90vh;
+}
+.name{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7rem;
+}
+.logo{
+    width: 100px;
+}
+.logo img{
+    width: 100%;
+}
+.reg-form{
+    background-color: white;
+    width: auto;
+    height: 90vh;
+}
+.naam{
+    flex-direction: column;
+    margin: 15px;
+}
+.mg{
+    justify-content: center;
+    align-items: center;
+}
+.mel{
+    flex-direction: column;
+    margin-left: 30px;
+}
+.he-30{
+    height: 30px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(188, 188, 188, 0.8);
+}
+#mail{
+    width: 25rem;
+}
+#phone-no{
+    width: 25rem;
+}
+#passw{
+    width: 25rem;
+}
+.mel{
+    margin: 15px;
+}
+.clr-red{
+    color: red;
+}
+.rows{
+    flex-direction: row;
+}
+.m-0-15{
+    margin: 0px 15px;
+}
+#stand{
+    margin-left: 8px;
+    width: 50px;
+    height: 30px;
+}
+.submit
+{
+    width: 200px;
+}
+#register{
+    background-color:rgb(0, 119, 255) ;
+    color: white;
+    cursor: pointer;
+}
+.info{
+    position: absolute;
+    bottom: 20px;
+}

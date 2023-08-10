@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.centr{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pd-20{
+    padding: 20px;
+}
+.logo{
+    width: 70px;
+    color: red;
+}
+.logo img{
+    width: 100%;
+}
+.slogan{
+    font-weight: bold;
+    background:linear-gradient(yellow,red);
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.says{
+    padding: 0px 10px;
+}
+.heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    width: 100px;
+}
+.fa-user{
+    color: rgb(27, 171, 199);
+    font-size: 60px;
+    margin: 20px;
+}
+.log{
+    display: contents;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(0, 6, 72);
+}
+.log h2{
+    color: rgb(27, 171, 199);
+    margin: 0px 10px;
+}
+.mid{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cl-gr{
+    background-color: rgb(244, 244, 244);
+    width: 280px;
+    border-radius: 20px;
+    height: 40px;
+    /* text-align: center; */
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+}
+.mr-10{
+    margin: 15px;
+}
+.blu{
+    text-align: center;
+    background-color: rgb(57, 187, 213);
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 8px rgb(215, 215, 215);
+
+}
+.login-form{
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(177, 175, 175);
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 30px;
+}
+.pd-10{
+    padding: 10px;
+}
+body{
+    background: linear-gradient(132deg, rgb(129, 34, 254) 0.00%, rgb(255, 186, 214) 100.00%);
+}
+.end{
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.txt-none{
+    text-decoration: none;
+}

@@ -1,0 +1,873 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='hostel.css')}}">
+    <link rel="shortcut icon" href="images/c_logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/74c8a167f2.js" crossorigin="anonymous"></script>
+    <title>{{ titles }}</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="header">
+                <div class="ptb-30">
+                    <div class="intro">
+                        <div class="space"></div>
+                        <div class="logo">
+                            <a href="">
+                                <img src="static/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="clg-name">
+                            <a href="">
+                                <img src="static/images/naac3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="social">
+                            <div class="silver">
+                                <a href="">
+                                    <img src="static/images/logo.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="marq">
+                                <marquee behavior="scroll" direction="left" scrolldelay="200" onmouseover="this.stop();"
+                                onmouseout="this.start();"><a
+                                        href="/hostel" target="_blank"><span class="pt-r30">Hostel notice<img
+                                                class="NEW" src="images/NEW-GIF.gif" alt=""></span></a> <a
+                                        href="http://macerp.macdu.in/OnlinePayment_MAC/Student_Login.aspx"><span
+                                            class="pt-r30">Online fee payment <img class="NEW" src="images/NEW-GIF.gif"
+                                                alt=""></span></a></marquee>
+                            </div>
+                            <!-- <div class="twitter">
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div> -->
+                            <div class="space"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="navigation-header" style="font-size:11px; font-family: Arial, Helvetica, sans-serif;">
+                    <div class="relate">
+                        <div class="navigation">
+                            <div class="nav-list">
+                                <ul class="fl-lft">
+                                    <div class="list-menu bloc" id="blo" onclick="expand(this)">
+                                        <li class="menu">
+                                            <p class="less"><i class="fa-solid fa-bars"></i></p>
+                                        </li>
+                                    </div>
+                                    <div id="listes">
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <a href=""><i class="fa-solid fa-house"></i></a>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <a href="">VISION</a>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="">VISION</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">MISSION</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <div class="nav-down">
+                                                    <a href="">ACADEMICS</a>
+                                                </div>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <div class="lft-hover">
+                                                                        <div class="go-56">
+                                                                            <a href="">ADDMISION 2021</a>
+                                                                        </div>
+                                                                        <div class="second-menu">
+                                                                            <div class="pda-20">
+                                                                                <div class="selects">
+                                                                                    <ul>
+                                                                                        <li><a href="">LIST OF
+                                                                                                COURSES</a></li>
+                                                                                        <li><a href="">ADSMISSION
+                                                                                                PRODECURE</a></li>
+                                                                                        <li><a href="">REGISTRSTION
+                                                                                                PORTAL</a></li>
+                                                                                        <li><a href="">DU BULLETIN OF
+                                                                                                INFORMATION</a></li>
+                                                                                        <li><a href=""> COURSES FEE</a>
+                                                                                        </li>
+                                                                                        <li><a href="">CUT-OFF</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="lft-hover">
+                                                                        <div class="go-56">
+                                                                            <a href="">COURSES</a>
+                                                                        </div>
+
+                                                                        <div class="second-menu">
+                                                                            <div class="pda-20">
+                                                                                <div class="selects">
+                                                                                    <ul>
+                                                                                        <li><a href="">COURSES</a></li>
+                                                                                        <li><a href="">SANCTIONED
+                                                                                                SEATS</a>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li>
+                                                                    <div class="lft-hover">
+                                                                        <div class="go-56">
+                                                                            <a href="">DEPARTMENTS</a>
+                                                                            <div class="pos-ri">
+                                                                                <span>
+                                                                                    <i
+                                                                                        class="fa-solid fa-angle-right"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="second-menu">
+                                                                            <div class="pda-20">
+                                                                                <div class="selects">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <div class="lft-hover1">
+                                                                                                <div class="go-56">
+                                                                                                    <a href="">ARTS
+                                                                                                        COURSES</a>
+
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="second-menu1">
+                                                                                                    <div class="pda-20">
+                                                                                                        <div
+                                                                                                            class="selects">
+                                                                                                            <ul>
+                                                                                                                <li><a
+                                                                                                                        href="">BUSSINESS
+                                                                                                                        ECONOMICS</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">ENGLISH</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">ECONOMICS</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">HINDI</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">HISTORY</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">JOURNALISM</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">PHYSICAL
+                                                                                                                        EDUCATION</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">POLITICAL
+                                                                                                                        SCIENCE</a>
+                                                                                                                </li>
+
+
+                                                                                                            </ul>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="lft-hover1">
+                                                                                                <div class="go-56">
+                                                                                                    <a href="">COMMERCE
+                                                                                                        COURSES</a>
+
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="second-menu1">
+                                                                                                    <div class="pda-20">
+                                                                                                        <div
+                                                                                                            class="selects">
+                                                                                                            <ul>
+                                                                                                                <li><a
+                                                                                                                        href="">COMMERCE</a>
+                                                                                                                </li>
+
+                                                                                                            </ul>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="lft-hover1">
+                                                                                                <div class="go-56">
+                                                                                                    <a href="">SCIENCE
+                                                                                                        COURSES</a>
+
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="second-menu1">
+                                                                                                    <div class="pda-20">
+                                                                                                        <div
+                                                                                                            class="selects">
+                                                                                                            <ul>
+                                                                                                                <li><a
+                                                                                                                        href="">BIOLOGY
+                                                                                                                    </a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">CHEMISTRY</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">COMPUTER
+                                                                                                                        SCIENCE</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">ELECTRONICS</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">MATHEMATICS</a>
+                                                                                                                </li>
+                                                                                                                <li><a
+                                                                                                                        href="">PHYSICS</a>
+                                                                                                                </li>
+                                                                                                            </ul>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">INTERNAL ASSESMENT RULES</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">SHORT TERM COURSES</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">ICT ENABLED TEACHING LEARNONG</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">MAC E-LEAARNING PORTAL</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">BULLETIN OF INFORMATION</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">ANNUAL REPORTS</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">BROCHURES DETAILS</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <div class="nav-down" title="ADMINISTRATION">
+                                                    <a href="">ADMINISTRATION</a>
+                                                </div>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="">MAC ORGANOGRAM</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">GOVERNING BODY</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">PRINCIPLE</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">RULES OF DISCIPLINE</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">GRIEVENCE REDRESSEL COMMITTE(GRL)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">COLLEGE COMMITTEES</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">STAFF COUNCIL COMMITTEES</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">INTERNAL COMPLAINT COMMITTEE</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">NOODLE PUBLIC GRIEVENCE OFFICER</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">LIAISON OFFICER</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">EXAMINATION GRIEVENCE COMMITTEE</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+
+                                                <div class="nav-down" title="STAFF">
+                                                    <a href="">STAFF</a>
+                                                </div>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="">ATTENDENCE SOFTWARE</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">LIST OF FACULTY MEMBERS</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">LIST OF NON-TEACHING STAFF</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">STAFF COUNCIL COMMITTE</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">STAFF ASSOCIATION</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">ESTABLISHMENT/SERVICE MATTERS</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">FACULTY PUBLICATON</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">MENTORING COUNCILING COMMITTEE</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">E-COPIES AND CERTIFICATES</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">IMPORTANT FORM LINKS</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+
+                                                <div class="nav-down" title="STUDENTS">
+                                                    <a href="">STUDENTS</a>
+                                                </div>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="">TIME TABLE</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">GENERAL ELECTIVE</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">INTERNAL ASSESMENT MARKS</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">STUDENTS RESULT</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">STUDENT ATTENDANCE</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">DEGREE DETAILS</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">ONLINE FORMS</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">ECE SOCIETIES</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">STUDENT FEEDBACK</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">SCHOLARSHIP BENEFICIARY</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">MENTOR MENTEE</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">EXAMINATION</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <a href="">MAC ARCHIEVES</a>
+
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <div class="nav-down" title="RESEARCH">
+                                                    <a href="">RESEARCH</a>
+                                                </div>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <div class="lft-hover">
+                                                                        <div class="go-56">
+                                                                            <a href="">PROJECTS</a>
+
+                                                                        </div>
+                                                                        <div class="second-menu">
+                                                                            <div class="pda-20">
+                                                                                <div class="selects">
+                                                                                    <ul>
+                                                                                        <li><a href="">ICSSR
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li><a href="">CURRENT
+                                                                                                PROJECTS</a>
+                                                                                        </li>
+                                                                                        <li><a href="">COMPLETED
+                                                                                                PROJECTS</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+
+                                                <div class="nav-down" title="ACCREDIATION">
+                                                    <a href="">ACCREDIATION</a>
+                                                </div>
+                                                <div class="drop-down">
+                                                    <div class="drop-menu">
+                                                        <div class="drop">
+                                                            <ul class="submenu">
+                                                                <li>
+                                                                    <a href="">NAAC</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">NIRF</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">INDIA TODAY</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="">AISHE</a>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="list-menu">
+                                            <li class="menu">
+                                                <a href="">INST. POLICIES</a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </header>
+        {% block body %}{% endblock body %}
+        <footer>
+            <div class="foot">
+                <div class="pds">
+                    <div class="flex left">
+                        <div class="contact">
+                            <div class="heading">
+                                <h3 style="color: white;">CONTACT DETAILS</h3>
+                            </div>
+                            <div class="address">
+                                <a href="" class="=flex link">
+                                    <div class="font-aw">
+                                        <i class="fa-solid fa-house-chimney"></i>
+                                    </div>
+                                    <div class="write">
+                                        <span>ADDRESS:</span>
+                                        <br>
+
+                                        <span style="color:rgb(181, 181, 181) ;">Vashundra Enclave,Delhi-11096</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="address">
+                                <a href="" class="=flex link">
+                                    <div class="font-aw">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="write">
+                                        <span>MAIL:</span>
+                                        <br>
+
+                                        <span style="color:rgb(181, 181, 181) ;">Principle@mac.du.ac.in</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="address">
+                                <a href="" class="=flex link">
+                                    <div class="font-aw">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="write">
+                                        <span>PHONE:</span>
+                                        <br>
+
+                                        <span style="color:rgb(181, 181, 181) ;">Phone: +91-11-22610563</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="footer-links">
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>R.T.I</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>IGNOU</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>NCWEB</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>JOB OPPORTUNITY</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>TENDERS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>RESULTS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>ARCHIEVES</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>DU ACADEMIC CALENDER 2022</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>DU HOLIDAY 2022</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>LIBRARY</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>NCC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>HOSTEL</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>ICT CENTERS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>LABORAITORIES</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>PLACEMENT CELL</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>ABDUL KALAM CENTER</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>RESEARCH PROJECTS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>FINANCIAL DOCUMENTS</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="aw cl-wh">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                </div>
+                                <a href="">
+                                    <div class="ft-li cl-wh" style="padding-left: .6rem;">
+                                        <span>EK BHARAT SHRESTH BHARAT</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="location-container">
+                            <div class="padding">
+                                <div class="loc-head" style="padding-bottom: 20px;color: white;">
+                                    <h3>LOCATION</h3>
+                                </div>
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                            marginheight="0" marginwidth="0"
+                                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Maharaj agrasen college ganpati marg&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bt0 flex">
+                    <div class="jc-c">
+                        <span>
+                            Copyright &#169; 2021-All Right Reserved-www.mac.du.ac.in
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    let slideindex = 0;
+    showslides();
+
+    function showslides() {
+        let i;
+        let slides = document.getElementsByClassName("item");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideindex++;
+        if (slideindex > slides.length) { slideindex = 1 }
+        slides[slideindex - 1].style.display = "block";
+        setTimeout(showslides, 2000);
+    }
+</script>
+<script>
+    let shows=document.getElementById("listes");
+    function expand(){
+        if (shows.style.display == "none") {
+            shows.style.display = "block";
+        }
+        else {
+            shows.style.display = "none";
+        }
+    }
+
+    $(function () {
+        $('marquee').mouseover(function () {
+            $(this).attr('scrollamount', 0);
+        }
+        )
+        .mouseout(function () {
+            $(this).attr('scrollamount', 5);
+        });
+    });
+</script>
+
+</html>

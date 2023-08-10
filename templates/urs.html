@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='urs.css')}}">
+    <title>{{titles}}</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pd-20">
+            <div class="registration">
+                <div class="flex jc-c">
+                    <div class="welcome-pa bg-blu">
+                        <div class="flex col">
+                            <div class="logo">
+                                <a href="URS.html"><img src="logo.png" alt=""></a>
+                            </div>
+                            <div class="name">
+                                <span>
+                                    <h2>Welcome To URS</h2>
+                                </span>
+                                <p>Your Free URS Account</p>
+                                <p>Is Only 2 Seconds Away</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="flex jc-c">
+                                <span><p>Already have account? <a href="log.html" style="color: rgb(12, 67, 205); font-weight:bold;">Log in</a></p></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-form">
+                        <div class="flex jc-c" style="width: fit-content;">
+                            <div class="mg">
+                                <form action="/contact" method="post">
+                                    <div class="row flex">
+                                        <div class="naam flex">
+                                            <label for="first">First Name:<span class="clr-red">*</span></label>
+                                            <input type="text" name="first" id="first" class="he-30" placeholder=""
+                                                required>
+                                        </div>
+                                        <div class="naam flex">
+                                            <label for="first">Last Name:</label>
+                                            <input type="text" name="last" id="last" class="he-30">
+                                        </div>
+                                    </div>
+                                    <div class="row flex">
+                                        <div class="flex mel">
+                                            <label for="mail">Email:</label>
+                                            <input type="email" name="mail" id="mail" class="he-30">
+                                        </div>
+                                    </div>
+                                    <div class="row flex">
+                                        <div class="flex mel">
+                                            <label for="phone">Phone No: <span class="clr-red">*</span></label>
+                                            <input type="tel" name="phone" id="phone-no" class="he-30" required>
+                                        </div>
+                                    </div>
+                                    <div class="row flex">
+                                        <div class="flex mel">
+                                            <label for="pass">Password:<span class="clr-red">*</span></label>
+                                            <input type="password" name="passe" id="passw" class="he-30" required>
+                                        </div>
+                                    </div>
+                                    <div class="row flex">
+                                        <div class="flex mel rows jc-c">
+                                            <label for="">Gender:<span class="clr-red">*</span></label>
+                                            <div class="flex jc-c">
+                                                <label for="male" style="margin-left: 5px;">Male</label>
+                                                <input type="radio" name="gender" id="male" class="he-30 m-0-15" required>
+                                                <label for="female" style="margin-left: 5px;">Female</label>
+                                                <input type="radio" name="gender" id="female" class="he-30 m-0-15" required>
+                                            </div>
+                                        </div>
+                                        <div class="standard flex jc-c">
+                                            <label for="" style="margin-right: 10px;">Class:<span class="clr-red">*</span></label>
+                                            <select name="classes" id="stand">
+                                                <option value="6th">6th</option>
+                                                <option value="7th">7th</option>
+                                                <option value="8th">8th</option>
+                                                <option value="9th">9th</option>
+                                                <option value="10th">10th</option>
+                                                <option value="11th">11th</option>
+                                                <option value="12th">12th</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row flex">
+                                        <div class="flex mel">
+                                            <label for="State">State:<span class="clr-red">*</span></label>
+                                            <input type="text" name="state" id="state" class="he-30" placeholder=""
+                                                required>
+                                        </div>
+                                        <div class="flex mel">
+                                            <label for="pin">Pin-Code:<span class="clr-red">*</span></label>
+                                            <input type="text" name="pin" id="pin" class="he-30" placeholder=""
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="row flex jc-c">
+                                        <div class="flex mel submit">
+                                            <input type="submit" value="Register Now" id="register" class="he-30">
+                                        </div>
+            
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
